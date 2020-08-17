@@ -2,7 +2,7 @@
 The purpose of this project is to give the analsyts at Sparkify the ability to easily query and analyze Spotify information. It uses python as the primary scripting language for ETL and the music and songplay information is stored in JSON. The etl.py file parses out music information such as artists, songs, and played information and adds it to a postgres database which can then be accessed for analysis, reporting, or querying.
 
 ## DATABASE DESIGN
-The database design is rather simple. It consists of five tables and takes a star-schema type approach. The songplays table is the primary fact table used for analysis and references the other dimension tables (time, songs, artists, and users).
+The database design is rather simple. It consists of five tables and takes a star-schema type approach. The songplays table is the primary table used for analysis and references the other tables (time, songs, artists, and users).
 
 ![schema](./images/Schema.png)
 
