@@ -2,7 +2,7 @@
 The purpose of this project is to give the analsyts at Sparkify the ability to easily query and analyze Spotify information. It takes music information such as artists, songs, and the information on when it was played and adds it to a database for easy querying or reporting. 
 
 ## DATABASE DESIGN
-The database design is rather simple. It consists of five tables and takes a star-schema type approach. The songs and artists are related to eachother and each point to the songplays table which contains the information on when the specific song was played.
+The database design is rather simple. It consists of five tables and takes a star-schema type approach. The songplays table is the primary table used for analysis and references the other dimension tables (time, songs, artists, and users).
 
 ![schema](./images/Schema.png)
 
